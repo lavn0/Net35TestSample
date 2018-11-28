@@ -1,6 +1,6 @@
 # Net35TestSample
-This solution is a sample for using Task in .NET 3.5.
-It is used for development with .NET 3.5 / C # 7.3 in VisualStudio 2017.
+This solution is a sample for using Task in .NET Framework 3.5.
+It is used for development with .NET Framework 3.5 / C# 7.3 in VisualStudio 2017.
 
 # Constitution
 

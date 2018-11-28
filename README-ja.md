@@ -1,6 +1,6 @@
 # Net35TestSample
-このソリューションは .NET 3.5 で Taskを使う為のサンプルです。
-VisualStudio2017 で .NET 3.5 / C#7.3 で開発する際に使用します。
+このソリューションは .NET Framework 3.5 で Taskを使う為のサンプルです。
+VisualStudio2017 で .NET Framework 3.5 / C#7.3 で開発する際に使用します。
 
 # 構成
 
