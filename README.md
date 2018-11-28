@@ -2,7 +2,7 @@
 This solution is a sample for using Task in .NET 3.5.
 It is used for development with .NET 3.5 / C # 7.3 in VisualStudio 2017.
 
-# 構成
+# Constitution
 
 ## Net35TestSample
 It is a console project that starts with async Main.
