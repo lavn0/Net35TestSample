@@ -8,6 +8,10 @@ namespace Net35TestSample
 {
     public class AsyncSample
     {
-        public Task<string> GetTitleAsync() => Task.FromResult("Hello World.");
+        public async Task<string> GetTitleAsync()
+        {
+            await Task.Delay(TimeSpan.FromSeconds(10));
+            return "Hello World.";
+        }
     }
 }

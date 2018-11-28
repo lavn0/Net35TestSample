@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net35TestSampleBaseTests", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3BA3419E-474D-4FE7-8F18-12E7E2E72AFF}"
 	ProjectSection(SolutionItems) = preProject
+		README-ja.md = README-ja.md
 		README.md = README.md
 	EndProjectSection
 EndProject
