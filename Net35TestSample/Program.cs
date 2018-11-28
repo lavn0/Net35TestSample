@@ -14,24 +14,28 @@ namespace Net35TestSample
         {
             var listener = new TextWriterTraceListener(Console.Out);
             Trace.Listeners.Add(listener);
-            using (var TokenSource = new CancellationTokenSource())
-            using (SetConsoleCtrl.Create(type =>
+
+            try
             {
-                TokenSource?.Cancel();
-                return false;
-            }))
-                await MainAction();
-            
-        }
+                using (var TokenSource = new CancellationTokenSource())
+                using (SetConsoleCtrl.Create(type =>
+                {
+                    TokenSource?.Cancel();
+                    return false;
+                }))
+                    await MainAction();
+            }catch(Exception e)
+            {
+                Trace.WriteLine(e);
+            }
+}
         static async Task MainAction()
         {
-            Console.WriteLine("wait...");
+            Trace.WriteLine("wait...");
             var sample = new AsyncSample();
             var title = await sample.GetTitleAsync();
-            Console.WriteLine(title);
-            Console.WriteLine("finish!");
-            Console.WriteLine("Please Enter.");
-            Console.ReadLine();
+            Trace.WriteLine(title);
+            Trace.WriteLine("finish!");
         }
         public class SetConsoleCtrl : IDisposable
         {
